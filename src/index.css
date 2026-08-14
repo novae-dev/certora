@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Aptos", "Segoe UI", sans-serif;
+  --color-ink: #101828;
+  --color-brand: #146b5a;
+  --color-brand-dark: #0d4c40;
+  --color-brand-light: #e7f5ef;
+  --color-canvas: #fcfdfc;
+}
+
+@layer base {
+  * { @apply border-slate-200; }
+  html { scroll-behavior: smooth; }
+  body { @apply m-0 min-w-80 bg-canvas font-sans text-ink antialiased; }
+  a { @apply no-underline; }
+}
